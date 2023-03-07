@@ -4,3 +4,5 @@ mapboxgl
 seaborn
 timestring
 matplotlib
+scikit-learn
+imblearn

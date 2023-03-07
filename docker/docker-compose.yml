@@ -1,5 +1,5 @@
 version: "3.8"
-
+name: jupyter-notebook
 services:
   jupyter:
     build:
@@ -8,9 +8,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      # - ../:/app
       - ../src:/app/src
       - ../datasets:/app/datasets
-      - ../requirements.txt:/app/requirements.txt
     environment:
       - JUPYTER_ENABLE_LAB=yes

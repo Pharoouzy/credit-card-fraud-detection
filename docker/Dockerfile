@@ -1,13 +1,11 @@
 FROM python:3
 
-COPY entrypoint.sh /entrypoint.sh
+COPY requirements.txt requirements.txt
 
-RUN chmod 755 /entrypoint.sh
+RUN pip install -r requirements.txt \
+    && pip install --upgrade pip \
+    && pip install jupyter
 
 WORKDIR /app
 
-RUN pip install --upgrade pip
-
-RUN pip install jupyter
-
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''"]
