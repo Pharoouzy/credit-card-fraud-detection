@@ -1,0 +1,14 @@
+version: "3.8"
+name: jupyter-notebook
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../src:/app/src
+      - ../datasets:/app/datasets
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
