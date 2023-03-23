@@ -3,7 +3,7 @@
 ## Setup Guide
 
 ### Introduction
-This repository contains scripts and Jupyter Notebook for improving credit card fraud detection using data augumentation to reducing false positives. This guide provides a step-by-step process on how to clone the project, copy the dataset, and start Jupyter Notebook to access the notebooks. Additionally, there is an optional section for running Jupyter on Docker.
+This repository contains scripts and Jupyter Notebooks for improving credit card fraud detection using data augmentation to reducing false positives. This guide provides a step-by-step process on how to clone the project, copy the dataset, and start Jupyter Notebook to access the notebooks. Additionally, there is an optional section for running Jupyter on Docker.
 
 ### Prerequisites
 Before setting up the Jupyter notebook, please ensure that you have the following:
