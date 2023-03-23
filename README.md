@@ -25,6 +25,7 @@ Next, clone the project to your local machine using the git command below:
 ````bash
 $ git clone git@github.com:Pharoouzt/credit-card-fraud-detection.git
 ````
+Navigate to the project directory using the command below:
 ````bash
 $ cd credit-card-fraud-detection
 ````
