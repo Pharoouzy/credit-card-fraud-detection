@@ -23,11 +23,11 @@ To get started, follow these steps:
 Next, clone the project to your local machine using the git command below:
 
 ````bash
-$ git clone git@github.com:Pharoouzt/credit-card-fraud-detection.git
+git clone git@github.com:Pharoouzy/credit-card-fraud-detection.git
 ````
 Navigate to the project directory using the command below:
 ````bash
-$ cd credit-card-fraud-detection
+cd credit-card-fraud-detection
 ````
 
 ##### Step 2: Copy datasets
@@ -36,7 +36,7 @@ To work with the dataset used for this project, you need to download it from [Ka
 To do this, navigate to the root directory of the repository using the terminal and run the following command:
 
 ````bash
-$ mkdir datasets
+mkdir datasets
 ````
 
 This will create a new directory named datasets in the root directory of the repository.
@@ -44,7 +44,7 @@ This will create a new directory named datasets in the root directory of the rep
 Next, you need to copy the downloaded ```CSV``` file into the datasets directory. You can do this using the terminal by navigating to the directory where the downloaded file is located and running the following command:
 
 ````bash
-$ cp <path_to_downloaded_csv_file> <path_to_repository_root_directory>/datasets/
+cp <path_to_downloaded_csv_file> <path_to_repository_root_directory>/datasets/
 ````
 
 Make sure to replace ```<path_to_downloaded_csv_file>``` with the path to the downloaded ```CSV``` file and ```<path_to_repository_root_directory>``` with the path to the root directory of the repository.
@@ -55,14 +55,14 @@ Once you have completed these steps, you are ready to start working with the dat
 You can install these dependencies from the porject directory by running the following command:
 
 ````bash
-$ pip install -r ./docker/requirements.txt
+pip install -r ./docker/requirements.txt
 ````
 
 ##### Step 5: Start Jupyter Notebook
 Start the Jupyter notebook by running the following command in the project directory:
 
 ````bash
-$ jupyter notebook
+jupyter notebook
 ````
 
 ##### Step 6: Access Jupyter Notebook
@@ -81,7 +81,7 @@ Install Docker on your machine. You can download it from [here](https://www.dock
 From the project root directory, run the following command to build and start the Docker container:
 
 ````bash
-$ docker/up.sh
+docker/up.sh
 ````
 This command will build and start the Docker container and map port ```8888``` to your local machine so that you can access the Jupyter Notebook environment.
 
@@ -92,5 +92,5 @@ Once the Docker container is built and operational, open your web browser and na
 Once you have finished working in the Jupyter Notebook environment, you can stop the Docker container by running the following command:
 
 ````bash
-$ docker/down.sh
+docker/down.sh
 ````
